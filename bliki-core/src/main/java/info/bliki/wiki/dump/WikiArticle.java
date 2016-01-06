@@ -104,6 +104,22 @@ public class WikiArticle {
         return integerNamespace.equals(NamespaceCode.MODULE_NAMESPACE_KEY.code);
     }
 
+    public boolean isHelp() {
+        return integerNamespace.equals(NamespaceCode.HELP_NAMESPACE_KEY.code);
+    }
+
+    public boolean isHelpTalk() {
+        return integerNamespace.equals(NamespaceCode.HELP_TALK_NAMESPACE_KEY.code);
+    }
+
+    public boolean isUser() {
+        return integerNamespace.equals(NamespaceCode.USER_NAMESPACE_KEY.code);
+    }
+
+    public boolean isUserTalk() {
+        return integerNamespace.equals(NamespaceCode.USER_TALK_NAMESPACE_KEY.code);
+    }
+
     /**
      * The ID of the wiki article to set.
      *
